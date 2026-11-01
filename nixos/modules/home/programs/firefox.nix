@@ -148,15 +148,16 @@
         # Восстанавливать вкладки предыдущей сессии
         "browser.startup.page" = 3;
 
-        # Убрать предложение войти в аккаунт Firefox (Sync/FxA)
+        # Firefox (Sync/FxA) + VPN
         "identity.fxaccounts.enabled" = false;
+        "browser.ipProtection.enabled" = false;
 
         # Enhanced Tracking Protection: Strict
         "browser.contentblocking.category" = "strict";
         "privacy.trackingprotection.allow_list.baseline.enabled" = true;
         "privacy.globalprivacycontrol.enabled" = true;
 
-        # Пароли, платёжные данные, адреса — ничего не сохранять и не автозаполнять
+        # Пароли, платёжные данные, адреса
         "signon.rememberSignons" = false;
         "signon.autofillForms" = false;
         "signon.generation.enabled" = false;
