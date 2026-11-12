@@ -121,6 +121,8 @@
               { name = "MDN-web-docs";      url = "https://developer.mozilla.org/ru/docs/Glossary/"; }
               { name = "Flibusta";          url = "https://flibusta.is/"; }
               { name = "NeoLurk";           url = "https://neolurk.org/"; }
+              { name = "iichan";            url = "https://iichan.hk/"; }
+              { name = "dobrochan";         url = "https://rf.dobrochan.net/"; }
               { name = "2chan";             url = "https://2ch.org/"; }
               { name = "4chan";             url = "https://4chan.org/"; }
               { name = "8chan";             url = "https://8chan.moe/"; }
