@@ -21,5 +21,6 @@
     ./firmware.nix
     ./compositor.nix
     ./packages
+    ./programs
   ];
 }

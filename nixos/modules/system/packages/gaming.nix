@@ -4,10 +4,10 @@
   environment.systemPackages = with pkgs; [
 
     # Gaming
-    mangohud faugus-launcher mesa-demos
-    vulkan-tools prismlauncher rusty-path-of-building
+    mangohud mesa-demos
+    vulkan-tools prismlauncher #usty-path-of-building
     steam-run steamcmd
-    #heroic goverlay # поставить goverlay когда починят
+    #heroic faugus-launcher goverlay # поставить goverlay когда починят
 
     #nzportable # убрать когда выйдет уже 2.0.0 стабильный релиз
     #angband # убрать если хочешь поставить

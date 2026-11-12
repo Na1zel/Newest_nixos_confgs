@@ -7,15 +7,15 @@
     git ripgrep fd tree-sitter tree jq yq perl httpie
 
     # Build toolchain (C/C++)
-    gcc
+    #gcc
 
-     Python
+    # Python
     (python3.withPackages (ps: with ps; [
           python-lsp-server
           python-lsp-black
           black
         ]))
-        pyright uv
+        basedpyright uv
 
     # typing
     klavaro
@@ -45,7 +45,7 @@
     # Nix tooling
     statix nix-init deadnix nvd
     nix-output-monitor nix-tree nix-du
-    nixd nil nixfmt
+    nil nixfmt #nixd
 
   ];
 }

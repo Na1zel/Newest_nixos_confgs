@@ -5,16 +5,15 @@
 
     # Desktop utilities
     #inotify-tools libnotify cliphist trash-cli app2unit
-    brightnessctl kdePackages.filelight
+    brightnessctl
 
     # Wayland screenshot / clipboard / input
     #grim slurp wev pamixer
-    wl-clipboard
+    wl-clipboard kitty
 
     # GTK / Qt theming
-    adw-gtk3 adwaita-icon-theme
-    kdePackages.oxygen
+    adwaita-icon-theme
   ];
 
-  environment.variables.EDITOR = "vim"; # заменил nano default editor на vim default editor echo $EDITOR
+  environment.variables.EDITOR = "nvim"; # заменил nano default editor на vim default editor echo $EDITOR
 }

@@ -14,40 +14,30 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/594052a0-c014-436c-9524-7805628a95b2";
+    { device = "/dev/disk/by-uuid/038d5717-46fe-4b51-995b-328aa5fc6771";
       fsType = "btrfs";
     };
 
   fileSystems."/nix" =
-    { device = "/dev/disk/by-uuid/594052a0-c014-436c-9524-7805628a95b2";
+    { device = "/dev/disk/by-uuid/038d5717-46fe-4b51-995b-328aa5fc6771";
       fsType = "btrfs";
       options = [ "subvol=nix" ];
     };
 
   fileSystems."/home" =
-    { device = "/dev/disk/by-uuid/594052a0-c014-436c-9524-7805628a95b2";
+    { device = "/dev/disk/by-uuid/038d5717-46fe-4b51-995b-328aa5fc6771";
       fsType = "btrfs";
       options = [ "subvol=home" ];
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/EE39-3043";
+    { device = "/dev/disk/by-uuid/9401-CE0B";
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
-  fileSystems."/home/naizel/ssd500gb" =
-    { device = "/dev/disk/by-uuid/4c59b93b-4e1b-4013-855c-5bb765232f58";
-      fsType = "btrfs";
-    };
-
-  fileSystems."/home/naizel/hdd1tb" =
-    { device = "/dev/disk/by-uuid/cdd9ffc6-6d30-4ced-aae4-b13b9f2b2d29";
-      fsType = "btrfs";
-    };
-
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/9682a4c8-fe02-4705-bfb9-077de12aeca3"; }
+    [ { device = "/dev/disk/by-uuid/e98034c3-b7d5-4ee4-8a76-1d8f277e1889"; }
     ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";

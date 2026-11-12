@@ -4,7 +4,7 @@
   environment.systemPackages = with pkgs; [
 
     # Playback
-    mpv haruna playerctl cava
+    mpv playerctl cava
 
     # Download / convert
     yt-dlp ffmpeg imagemagick

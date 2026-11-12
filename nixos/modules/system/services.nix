@@ -3,7 +3,6 @@
 {
   # Power management
   services.upower.enable = true;
-  services.power-profiles-daemon.enable = true;
   powerManagement.cpuFreqGovernor = "performance";
 
   # Desktop / filesystem integration
@@ -21,7 +20,6 @@
 
   # Programs
   programs.kdeconnect.enable = true;
-  programs.partition-manager.enable = true;
 
   # Network analysis
 }

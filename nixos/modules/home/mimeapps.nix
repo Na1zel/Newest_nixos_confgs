@@ -1,21 +1,20 @@
 { ... }:
 
 {
+  home.sessionVariables.TERMINAL = "kitty";
+  
   xdg.mimeApps = {
     enable = true;
 
     defaultApplications = {
-      # Terminal
-      "x-scheme-handler/terminal" = "konsole.desktop";
-
       # File manager
-      "inode/directory" = "org.kde.dolphin.desktop";
+      "inode/directory" = "pcmanfm.desktop";
 
       # Text
-      "text/x-nix" = "org.kde.kate.desktop";
-      "text/plain" = "org.kde.kate.desktop";
-      "application/x-zerosize" = "org.kde.kate.desktop";
-      "application/x-bak" = "org.kde.kate.desktop";
+      "text/x-nix" = "org.x.editor.desktop";
+      "text/plain" = "org.x.editor.desktop";
+      "application/x-zerosize" = "org.x.editor.desktop";
+      "application/x-bak" = "org.x.editor.desktop";
 
       # Web
       "text/html" = "firefox.desktop";
@@ -23,61 +22,64 @@
       "x-scheme-handler/https" = "firefox.desktop";
 
       # Video
-      "video/mp4" = "haruna.desktop";
-      "video/x-matroska" = "haruna.desktop";
-      "video/webm" = "haruna.desktop";
-      "video/avi" = "haruna.desktop";
-      "video/quicktime" = "haruna.desktop";
+      "video/mp4" = "mpv.desktop";
+      "video/x-matroska" = "mpv.desktop";
+      "video/webm" = "mpv.desktop";
+      "video/avi" = "mpv.desktop";
+      "video/x-msvideo" = "mpv.desktop";
+      "video/quicktime" = "mpv.desktop";
+      "video/mpeg" = "mpv.desktop";
 
       # Audio
-      "audio/mpeg" = "elisa.desktop";
-      "audio/flac" = "elisa.desktop";
-      "audio/ogg" = "elisa.desktop";
-      "audio/x-wav" = "elisa.desktop";
-      "audio/mp3" = "elisa.desktop";
-      "audio/aac" = "elisa.desktop";
-      "audio/x-aac" = "elisa.desktop";
-      "audio/x-mpegurl" = "elisa.desktop";
-      "audio/x-scpls" = "elisa.desktop";
+      "audio/mpeg" = "mpv.desktop";
+      "audio/flac" = "mpv.desktop";
+      "audio/ogg" = "mpv.desktop";
+      "audio/x-wav" = "mpv.desktop";
+      "audio/mp3" = "mpv.desktop";
+      "audio/aac" = "mpv.desktop";
+      "audio/x-aac" = "mpv.desktop";
+      "audio/x-mpegurl" = "mpv.desktop";
+      "audio/x-scpls" = "mpv.desktop";
 
       # Images
-      "image/png" = "org.kde.gwenview.desktop";
-      "image/jpeg" = "org.kde.gwenview.desktop";
-      "image/gif" = "org.kde.gwenview.desktop";
-      "image/webp" = "org.kde.gwenview.desktop";
-      "image/svg+xml" = "org.kde.gwenview.desktop";
-      "image/avif" = "org.kde.gwenview.desktop";
-      "image/jxl" = "org.kde.gwenview.desktop";
+      "image/png" = "imv-dir.desktop";
+      "image/jpeg" = "imv-dir.desktop";
+      "image/gif" = "imv-dir.desktop";
+      "image/webp" = "imv-dir.desktop";
+      "image/svg+xml" = "imv-dir.desktop";
+      "image/avif" = "imv-dir.desktop";
+      "image/jxl" = "imv-dir.desktop";
 
-      # Documents
-      "application/pdf" = "org.kde.okular.desktop";
+      # Documents / Books
+      "application/pdf" = "org.pwmt.zathura.desktop";
+      "image/vnd.djvu" = "org.pwmt.zathura.desktop";
+      "application/vnd.comicbook+zip" = "org.pwmt.zathura.desktop";
+      "application/epub+zip" = "org.pwmt.zathura.desktop";
 
       # Torrents
-      "application/x-bittorrent" = "org.kde.ktorrent.desktop";
-      "application/x-torrent" = "org.kde.ktorrent.desktop";
-      "x-scheme-handler/magnet" = "org.kde.ktorrent.desktop";
+      "application/x-bittorrent" = "transmission-gtk.desktop";
+      "application/x-torrent" = "transmission-gtk.desktop";
+      "x-scheme-handler/magnet" = "transmission-gtk.desktop";
 
       # Archives
-      "application/zip" = "org.kde.ark.desktop";
-      "application/x-tar" = "org.kde.ark.desktop";
-      "application/x-compressed-tar" = "org.kde.ark.desktop";
-      "application/x-bzip2-compressed-tar" = "org.kde.ark.desktop";
-      "application/x-xz-compressed-tar" = "org.kde.ark.desktop";
-      "application/x-7z-compressed" = "org.kde.ark.desktop";
-      "application/x-rar" = "org.kde.ark.desktop";
-      "application/x-rar-compressed" = "org.kde.ark.desktop";
-      "application/x-zstd-compressed-tar" = "org.kde.ark.desktop";
+      "application/zip" = "xarchiver.desktop";
+      "application/x-tar" = "xarchiver.desktop";
+      "application/x-compressed-tar" = "xarchiver.desktop";
+      "application/x-bzip2-compressed-tar" = "xarchiver.desktop";
+      "application/x-xz-compressed-tar" = "xarchiver.desktop";
+      "application/x-7z-compressed" = "xarchiver.desktop";
+      "application/x-rar" = "xarchiver.desktop";
+      "application/x-rar-compressed" = "xarchiver.desktop";
+      "application/x-zstd-compressed-tar" = "xarchiver.desktop";
     };
   };
 
   # Default terminal
-
   xdg.terminal-exec = {
     enable = true;
-
     settings = {
       default = [
-        "konsole.desktop"
+        "kitty.desktop"
       ];
     };
   };

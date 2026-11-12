@@ -13,7 +13,7 @@
     gnupg sbctl efibootmgr e2fsprogs
 
     # Disk / filesystem
-    smartmontools ntfs3g exfatprogs libva-utils ncdu duf abootimg iotop-c
+    smartmontools ntfs3g exfatprogs libva-utils ncdu duf abootimg #iotop-c
 
     # Hardware enumeration
     pciutils usbutils libusb1

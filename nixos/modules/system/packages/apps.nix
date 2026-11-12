@@ -3,26 +3,30 @@
 {
   environment.systemPackages = with pkgs; [
 
-    # Documents / viewers
-    libreoffice-qt
+    # Office
+    libreoffice
 
     # Image / creative / 3D
-    krita gimp darktable upscaler
+    krita gimp upscaler #darktable
+    imv
+
+    # Music
+    cmus
 
     # Video editing
-    kdePackages.kdenlive
+    #kdePackages.kdenlive
 
     # Communication
     ayugram-desktop vesktop
 
+    # Text-editor
+    xed-editor
+
     # Torrents
-    kdePackages.ktorrent
+    transmission_4-gtk
 
     # KDE utilities
-    kdePackages.partitionmanager kdePackages.isoimagewriter
-    #kdePackages.qtstyleplugin-kvantum добавить если надо
-
-    # File manager
-
+    kdePackages.breeze-icons
+    pcmanfm xarchiver ffmpegthumbnailer
   ];
 }

@@ -1,0 +1,12 @@
+{ pkgs, ... }:
+
+{
+  home.pointerCursor = {
+    enable = true;
+    package = pkgs.simp1e-cursors;
+    name = "Simp1e-Dark";
+    size = 24;
+    gtk.enable = true;
+    x11.enable = true;
+  };
+}

@@ -1,7 +1,20 @@
 { pkgs, ... }:
 {
-  services.desktopManager.plasma6.enable = true;
   services.displayManager.ly.enable = true;
+
+  programs.hyprland = {
+    enable = true;
+    withUWSM = true;
+  };
+  
+  xdg.portal.extraPortals = [
+    pkgs.xdg-desktop-portal-gtk
+  ];
+
+  programs.noctalia = {
+    enable = true;
+    recommendedServices.enable = true;
+  };
 }
 
 # balooctl6 disable # вырубает его нахуй

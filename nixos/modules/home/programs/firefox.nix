@@ -204,6 +204,7 @@
         "browser.urlbar.suggest.mdn" = false;
         "browser.urlbar.suggest.yelp" = false;
         "browser.urlbar.suggest.pocket" = false;
+        "media.videocontrols.picture-in-picture.video-toggle.enabled" = false;
       };
     };
   };

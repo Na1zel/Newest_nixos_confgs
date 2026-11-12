@@ -4,8 +4,7 @@
   environment.systemPackages = with pkgs; [
 
     # Monitor / peripheral control
-    #ddcutil ddccontrol
-    #overskride
+    ddcutil ddccontrol
 
   ];
 }
