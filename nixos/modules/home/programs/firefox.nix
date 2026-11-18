@@ -189,6 +189,8 @@
         "browser.urlbar.quicksuggest.dataCollection.enabled" = false;
         "browser.urlbar.suggest.quicksuggest.nonsponsored" = false;
         "browser.urlbar.suggest.quicksuggest.sponsored" = false;
+        "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons" = false;
+        "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features" = false;
 
         # Остальное
         "browser.urlbar.suggest.history" = false;
